@@ -1,0 +1,71 @@
+<div class="container-fluid p-5  m-5  bg-white rounded" style="width: auto;">
+  <h2>Tu carrito</h2>
+  <div class="row justify-content-center my-5">
+    <div class="col-9">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <div class="row">
+              <div class="col-3">
+                <th scope="col">Producto</th>
+
+              </div>
+              <div class="col">
+                <th scope="col">Marca</th>
+
+              </div>
+              <div class="col">
+                <th scope="col">Cantidad</th>
+
+              </div>
+              <div class="col">
+            <th scope="col">Precio unitario</th>
+
+              </div>
+              <div class="col-2">
+            <th scope="col">Eliminar</th>
+
+              </div>
+
+            </div>
+
+          </tr>
+        </thead>
+      </table>
+
+      <app-fila-tabla *ngFor="let fila of filas" [fila]="fila"></app-fila-tabla>
+
+
+
+
+      <div class="row my-5 justify-content-between">
+        <div class="col-3">
+          <h6>Medio de pago</h6>
+          <select class="form-select" aria-label="Default select example">
+            <option value="1">DEBITO</option>
+            <option value="2">CREDITO</option>
+          </select>
+        </div>
+       <!--
+        <div class="col-6">
+          <h6>Codigo de cupon</h6>
+            <form>
+              <div class="row">
+                <div class="col">
+                  <input type="text" class="form-control">
+                </div>
+                <div class="col">
+                   <button type="submit" class="btn btn-outline-info">Verificar</button>
+                </div>
+              </div>
+
+            </form>
+        </div>
+
+      -->
+      </div>
+      <button class="btn btn-outline-success">Finalizar</button>
+      <button href="#" class="btn btn-outline-primary mx-5">Volver</button>
+    </div>
+  </div>
+</div>

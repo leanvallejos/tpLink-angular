@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand navbar-light bg-light" aria-label="Second navbar example">
+  <div class="container-fluid">
+    <a class="navbar-brand"  [routerLink]="['/home']">Tienda online</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExample02">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a [routerLink]="['/home']"  class="nav-link " aria-current="page"  >Home</a>
+        </li>
+        <li class="nav-item">
+          <a  [routerLink]="['/catalogo']" class="nav-link " >Productos</a>
+        </li>
+      </ul>
+
+      <p>Bienvenido {{nombreUsuario}}</p>
+
+<div class=" px-5">
+  <button [routerLink]="['/carrito']" class="btn  btn-outline-dark">
+    Carrito
+  </button>
+
+</div>
+
+<div class="flex-shrink-0 dropdown">
+        <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser2" data-bs-toggle="dropdown">
+          <img src="https://i0.pngocean.com/files/831/88/865/user-profile-computer-icons-user-interface-mystique.jpg" alt="mdo" width="32" height="32" class="rounded-circle">
+        </a>
+        <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser2" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(-110px, 34px);" data-popper-placement="bottom-end">
+          <li><a class="dropdown-item" (click)="cerrarSesion()">Sign out</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</nav>

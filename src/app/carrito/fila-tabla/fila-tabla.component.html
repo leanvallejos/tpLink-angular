@@ -1,0 +1,29 @@
+<table class="table table-striped">
+  <tbody>
+  <tr>
+    <div class="row">
+      <div class="col-3">
+        <td>{{fila.producto}}</td>
+      </div>
+      <div class="col">
+        <td>{{fila.proveedor}}</td>
+      </div>
+      <div class="col">
+        <td class="text-center">{{fila.cant}}</td>
+      </div>
+      <div class="col">
+        <td>{{fila.precioPesos}}</td>
+      </div>
+      <div class="col-2">
+        <td class="text-end">
+          <button (click)="eliminarDelCarrito()" class="btn btn-sm btn-outline-danger">x</button>
+        </td>
+      </div>
+    </div>
+</tr>
+</tbody>
+</table>
+
+
+
+

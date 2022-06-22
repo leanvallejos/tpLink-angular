@@ -1,0 +1,43 @@
+<div class="col">
+  <div class="card shadow-sm">
+    <img class="img-responsive" src={{producto?.urlImagen}}>
+    <div class="card-body">
+      <h5 class="card-titule">{{producto?.nombre}}</h5>
+      <h6 class="card-text">{{producto?.proveedor}}</h6>
+      <p class="card-text">{{producto?.precioPesos}}</p>
+
+
+          <div class="row justify-content-center">
+          <div class="col">
+            <div class=" dropdown" >
+
+                <button class="btn btn-outline-primary dropdown-toggle" id="dropdownUser2" data-bs-toggle="dropdown">Detalle</button>
+
+
+              <div class="dropdown-menu" aria-labelledby="dropdownUser2"  >
+                <div class="dropdown-item" style="min-width:25vw;">
+                  <p class="text-wrap" >
+                    {{producto?.descripcion}}
+                  </p>
+
+              </div>
+              </div>
+
+            </div>
+
+
+          </div>
+          <div class="col">
+            <div class="form-group">
+            <input type="number" class="form-control" id="cant" value="1" [(ngModel)] = "cant" [ngModelOptions]="{standalone: true}">
+          </div>
+          </div>
+          <div class="col">
+             <button (click)="agregarAlCarrito()" class="btn btn-outline-success">Agregar</button>
+          </div>
+
+          </div>
+
+    </div>
+  </div>
+</div>
